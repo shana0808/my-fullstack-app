@@ -1,14 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sentiment App</title>
+  <meta charset="UTF-8">
+  <title>Ethnotech Academic Solution</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      background-color: #0d47a1;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #002171;
+    }
+
+    .header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+
+    .header h1 {
+      display: inline-block;
+      margin: 0 0 0 10px;
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 320px;
+      margin: 50px auto;
+      color: black;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 48%;
+    }
+
+    button:hover {
+      background-color: #08306b;
+    }
+  </style>
 </head>
 <body>
-    <h1>Enter a sentence</h1>
-    <form method="post">
-        <input type="text" name="text" required>
-        <button type="submit">Analyze</button>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ethnotech Academic Solution</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      background-color: #0d47a1;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #002171;
+    }
+
+    .header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+
+    .header h1 {
+      display: inline-block;
+      margin: 0 0 0 10px;
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 320px;
+      margin: 50px auto;
+      color: black;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 48%;
+    }
+
+    button:hover {
+      background-color: #08306b;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="C:\Users\ADMIN\Downloads\ETHNO.JPEG" alt="Logo">
+    <h1>Ethnotech Academic Solution</h1>
+  </div>
+
+  <div class="form-container">
+    <h2 style="text-align: center;">Training Partner Login</h2>
+    <form action="/api/login" method="post">
+      <input type="text" name="tpId" placeholder="Training Partner ID" required>
+      <input type="password" name="password" placeholder="NSDC Password" required>
+
+      <div class="button-container">
+        <button type="submit">Login</button>
+        <button type="button" onclick="window.close()">Exit</button>
+      </div>
     </form>
-    <p>Result: {{ result }}</p>
+  </div>
 </body>
 </html>
+
+
+ 
